@@ -3,6 +3,9 @@ language: python
 python:
   - 2.7
 
+env:
+ golbal:
+  - secure: TuY3O/FFh53+X7lAak3K3AklEV3i3MfXXHavmLBVvpyitL+2VQWJ7aTkmtkJEIM/9h04G6CiIpnqBHGJJMbA56BerX49EMxrQF2o+x7oyRNNcYArgU/f4pio/eoIRPNLG6RVvqa5yZuLukqquLbrtCuiwR2j9uyarNvKEGHeLYeEpGxbERVIXBE2v0K7p8JbKg0ONc8ilY6vxwtgUykayfBhoCtuxEQjI75t6touqmiPfa7Z0HV0FpdeKfH74yplMwBvkbgNDNupmR5JU1m8AerbbBxeJiHPhn3Aj8XGz6g7vMom++m1TZLncfwbZEln3+aGeKQOf68i2xC44yR9Mw==
 # Mongo binds to 127.0.0.1 by default
 services:
   - neo4j
@@ -20,4 +23,5 @@ before_script:
 script:
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - coverage run --branch test.py
+  - echo $foo
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
