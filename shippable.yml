@@ -3,10 +3,6 @@ language: python
 python:
   - 2.7
 
-env:
- global:
-  - secure: PivPjTfbQzAUpY5CootzeR6dcLyV2IQsl1Rw/e8eYOoA/gIKZO5iGGtnDV82I6HwCFjviC0zgQ9FnELIksDumrXLB1mYQ3PmPA/uz+grOFyIh9mBjNnQpaM9sGsRKVj4UzLQRolgmsGDuE3UIS82kqP6loPf/hidAWKmP7RiS6dpMzDVKB9lDRJLGHNynku/EN3SSxDSmHxEReeV4bZFMbI6xWE5b+6wvglR+7nF2KEEQTctVPMGGdlWN+rQmkj+BjSLTtMaCuZOHrcAofvM+Tk+XgMY2httz/dcgxYDcHvZwPskv5W2+U+SK0p25OLeyM0WLe3/PSN/He5EPeJbKw==
-
 # Mongo binds to 127.0.0.1 by default
 services:
   - neo4j
@@ -26,4 +22,4 @@ script:
   - coverage run --branch test.py
 #  - echo $foo and $name
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
-  - echo $variable
+
