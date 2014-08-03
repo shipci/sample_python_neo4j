@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - 2.7
+  - 3.2
 env:
  global:
   - secure: F2TGbtqKG2sO7XFBLplzWzJg2/1alKO4DOSMRRtrB+C+AtYyGHkNRHgRjpbQ74ByXpurkcKRB3cUy4n5PhcU+rxMFPQoc3hPdntx4TG9kfUMTXLxQPE2FjY8Q2hHPJgHWRhP8uMHoFYwO2BzMEVSj1bnmixqVQolOlGtAK/jufgzfysKtslddPHiHWWvN/t+g2W3oFFviMCZZvv6v3xLWP7jvg2FEemIHw+tQ5/OEn6lVmAJzTqMWxu5G6ryZupoUll5j3Tjw9xw88/mh8nBnoq/jALLar5F7+cxGijgjmXFWf2IdOYe58VrJyARQ83ywyWoFcOjfV3FihjHNECGPg==
