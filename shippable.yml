@@ -1,9 +1,10 @@
 language: python
 
 python:
-  - 3.2
+  - 2.7
 env:
  global:
+  - secure: pNTCcWxd1Kfaal6sLsFdF0SxmAcv+9rEd/leSWlNQxSGwDtwkbHXLF6u+Z/0GBdFYDTokanMnR99VWOMDrS9Dx84pLJVvj5GIQRZxK1bfNRzLj7vVUcFAIDUByNJHpldK/FpZsQbxEQDyO7ogmakNBZOaBaiBgv5oGT3zjaP36GpXYRhiC6mx9QnstByIz1OT1sHtr81zSnp9RA+HjHR78TOihUwMW7yrrSLgXTsiIbriEGl8tjPSwfhXi8BwiAqWvOcaHVrMRck9zW2knomiH20CJ3/P7IsC/2WPSQNM693TZGjBNS0hp8YP7Yy1wePD7wQm3Me4i13vztS/I74pg==
   - secure: F2TGbtqKG2sO7XFBLplzWzJg2/1alKO4DOSMRRtrB+C+AtYyGHkNRHgRjpbQ74ByXpurkcKRB3cUy4n5PhcU+rxMFPQoc3hPdntx4TG9kfUMTXLxQPE2FjY8Q2hHPJgHWRhP8uMHoFYwO2BzMEVSj1bnmixqVQolOlGtAK/jufgzfysKtslddPHiHWWvN/t+g2W3oFFviMCZZvv6v3xLWP7jvg2FEemIHw+tQ5/OEn6lVmAJzTqMWxu5G6ryZupoUll5j3Tjw9xw88/mh8nBnoq/jALLar5F7+cxGijgjmXFWf2IdOYe58VrJyARQ83ywyWoFcOjfV3FihjHNECGPg==
 # Mongo binds to 127.0.0.1 by default
 services:
@@ -24,3 +25,4 @@ script:
   - coverage run --branch test.py
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $foo
+  - echo $var
